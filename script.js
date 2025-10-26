@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzRiEC62awvd3EjBvfYa_nkg6jQK83oERb4JckRUbrNqdgCdPqIWZjBm0Eu_Zv5PPyfQw/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyKipTRBDYrfbwBSQs4R2F052lcAprhTR6ypvG_AT-qNfpGP7LvL51i8a0xbmr6NudFyA/exec';
 const form = document.getElementById('formulario');
 const msg = document.getElementById('mensagem');
 const btn = form.querySelector('button[type="submit"]');

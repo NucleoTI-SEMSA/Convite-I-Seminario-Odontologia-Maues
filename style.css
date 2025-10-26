@@ -228,7 +228,7 @@
         font-weight: bold;
         border-radius: 12px;
         background-color: #ff6f61;
-        color: white;
+        color: rgb(12, 12, 12);
         border: none;
         cursor: pointer;
         transition: background 0.3s, transform 0.2s;
@@ -254,6 +254,10 @@
 
     .success-message.success {
         color: #17fa02;
+        /* sombra da letra */
+        text-shadow: 2px 2px rgb(7, 7, 7);
+        /* Borda da letra */
+        /* -webkit-text-stroke: 0.3px black; */
     }
 
     .success-message.error {
@@ -387,10 +391,40 @@
 
 
     /* MOBILE */
-    @media (max-width: 600px) {
+    @media (max-width: 770px) {
 
-        .container {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(assets/background.png);
+            background-repeat: repeat; 
+            font-family: 'Segoe UI', sans-serif;
+            perspective: 1000px;
+            color: white;
+            /* Impede rolagem lateral */
+            overflow-y: auto;
+            /* Permite rolagem vertical */
+            min-height: 100vh;
+            position: relative;
             flex-direction: column;
+            padding: 40px 100px;
+        }
+
+        /* Caixa do formulário */
+        .container {
+            background-image: url(assets/backdrop.png);
+            background-repeat: repeat;
+            border-radius: 20px;
+            padding: 30px;
+            width: 100vw;
+            max-width: 400px;
+            width: 70%;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 20px #fff4;
+            z-index: 1;
+            margin: auto;
+            /* <- isso aqui centraliza certinho dentro do flex */
         }
 
         /* Rodapé */
