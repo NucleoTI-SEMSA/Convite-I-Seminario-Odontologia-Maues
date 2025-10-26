@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1º Seminário de Odontologia de Maués</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+ 
+  <div class="form-wrapper">
+
+    <div class="form-box">
+
+      <div class="container">
+
+        <img src="assets/logo.png" alt="logo" class="imagem-logo">
+        
+        <h1>Convite Especial</h1>
+        <h3>A Prefeitura de Maués e a Secretaria Municipal de Saúde de Maués tem a alegria de convidar todos os Cirurgiões-Dentistas e Técnicos em Saúde Bucal para participarem do I Seminário de Odontologia de Maués, um evento dedicado à troca de experiências, atualização profissional e fortalecimento da saúde bucal no município.</h3>
+        <h3>Data: 11 e 12 de novembro </h3>
+        <h3>Local: Auditório SENAC </h3>
+        <h3>Será um momento de aprendizado, integração e valorização dos profissionais que fazem a diferença todos os dias.</h3>
+        <h3>Participe e faça parte dessa história!</h3>
+        <form id="formulario">
+          <label>Nome Completo:</label>
+          <input type="text" name="nome" required />
+
+          <label>Telefone/WhatsApp:</label>
+          <input type="tel" name="telefone" required />
+
+          <label>Confirmação de presença</label>
+          <select name="presenca" required>
+            <option value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+
+          <button type="submit">Confirmar presença!</button>
+        </form>
+
+        <div class="success-message" id="mensagem"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="script-background.js"></script>
+
+</body>
+
+<!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="div-prefeitura">
+          <img class="prefeitura" src="assets/Logos/prefeitura.png" alt="prefeitura">
+        </div>
+
+        <div class="div-semsa">
+          <img class="semsa" src="assets/Logos/semsa.png" alt="semsa">
+        </div>
+
+        <div class="div-nucleoti">
+          <img class="nucleoti" src="assets/Logos/nucleo.png" alt="nucleoti">
+        </div>
+    </footer>
+
+
+</html>
