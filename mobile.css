@@ -1,0 +1,93 @@
+    /* MOBILE */
+    @media (max-width: 770px) {
+
+        /* Caixa do formulário */
+        .container {
+            background-image: url(assets/backdrop.png);
+            background-repeat: repeat;
+            border-radius: 20px;
+            padding: 30px;
+            width: 100vw;
+            max-width: 400px;
+            width: 70%;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 20px #fff4;
+            z-index: 1;
+            margin: auto;
+            /* <- isso aqui centraliza certinho dentro do flex */
+        }
+
+        /* Rodapé */
+        .footer {
+            width: 100%;
+            max-height: 20vh;
+            background-image: url(assets/backdrop.png);
+            background-repeat: repeat; 
+            display: grid;
+            grid-template-columns: 33% 33% 33%; /* Define os tamanhos de cada subcontainer do principal */
+            grid-template-areas: /* Organiza as linhas e colunas (containers) */
+            "div-prefeitura div-semsa div-nucleoti";    
+            align-items: center;
+        }
+
+        .prefeitura {
+            height: 7vh;
+            width: 80%;
+        }
+            
+        .semsa {
+            height: 8vh;
+            width: 70%;
+        }
+
+        .nucleoti {
+            height: 17vh;
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        /* Caixa do formulário */
+        .container {
+            background-image: url(assets/backdrop.png);
+            background-repeat: repeat;
+            border-radius: 20px;
+            padding: 30px;
+            width: 100vw;
+            max-width: 400px;
+            width: 70%;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 20px #fff4;
+            z-index: 1;
+            margin: auto;
+            /* <- isso aqui centraliza certinho dentro do flex */
+        }
+
+        /* Rodapé */
+        .footer {
+            width: 300px;
+            max-height: 20vh;
+            background-image: url(assets/backdrop.png);
+            background-repeat: repeat; 
+            display: grid;
+            grid-template-columns: 33% 33% 33%; /* Define os tamanhos de cada subcontainer do principal */
+            grid-template-areas: /* Organiza as linhas e colunas (containers) */
+            "div-prefeitura div-semsa div-nucleoti";    
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 300px) {
+         /* Rodapé */
+        .footer {
+            width: 250px;
+            max-height: 20vh;
+            background-image: url(assets/backdrop.png);
+            background-repeat: repeat; 
+            display: grid;
+            grid-template-columns: 33% 33% 33%; /* Define os tamanhos de cada subcontainer do principal */
+            grid-template-areas: /* Organiza as linhas e colunas (containers) */
+            "div-prefeitura div-semsa div-nucleoti";    
+            align-items: center;
+        }
+    }
